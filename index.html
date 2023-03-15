@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/619/619153.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Extrados</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="navegacion">
+            <li class="navegacion-li"><a href="#">Inicio</a></li>
+            <li class="navegacion-li"><a href="contacto.html">Contacto</a></li>
+            <li class="navegacion-li"><a href="calculadora.html">Calculadora</a></li>
+            <li class="navegacion-li"><a href="pokemones.html">Pokédex</a></li>
+
+            <a href="index.html"><img class="izquierda" src="./IMG/extrados_logo.png" alt="extrados"></a>
+        </ul>
+    </nav>
+
+    <div class="contenedor">
+
+        <h3>FORMULARIO DE USUARIO</h3>
+        <form class="formulario" id="form" action="contacto.html" method="post">
+
+            <p>Usuario</p>
+            <input type="text" class="field" id="usuario" required> <br />
+
+            <p>Contraseña</p>
+            <input type="password" class="field" id="contrasena" required> <br />
+
+            <p>Mensaje</p>
+            <textarea class="field" id="mensaje"></textarea> <br />
+
+            <div class="boton-radio">
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino" required>
+
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required> 
+            </div>
+
+
+            <div class="boton-selected">
+                <label for="usuarios">Tipo usuario</label>
+                <select name="usuarios" id="tipo_usuarios">
+                    <option value="admin" selected="true">Admin</option>
+                    <option value="cliente">Cliente</option>
+                    <option value="invitado">Invitado</option>
+                </select>
+            </div>
+
+            <button   class="botonEnviar"  id="btnEnviar">ENVIAR</button>
+        </form>
+    </div>
+
+    <div id="msj" class="mensaje"></div>
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./JS/script.js"></script>
+    
+
+</body>
+
+</html>

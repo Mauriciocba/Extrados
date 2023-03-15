@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play&family=Oswald&family=Phudu&family=Press+Start+2P&family=Roboto+Mono:ital,wght@1,100&display=swap');
+
+body{
+    background-image: url("/IMG/poke3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*navegacion*/
+.navegacion{
+    list-style-type: none;
+    margin-bottom: 50px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1c1c27;
+  
+}
+
+.navegacion-li{
+    float: left;
+}
+  
+.navegacion-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Cairo Play', cursive;;
+    transition: .5s ease all;
+    
+}
+.navegacion-li a:hover {
+    transform: translateY(10px);
+}
+img{
+    width: 60px;   
+}
+img.izquierda {
+    float: right;
+}
+
+
+/*titulo*/
+.titulo{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Press Start 2P';
+    color: white;
+}
+
+/*card*/
+.card {
+ width: 190px;
+ height: 254px;
+ background: #b4432f9d;
+ padding: 2rem 1.5rem;
+ transition: box-shadow .3s ease, transform .2s ease;
+ margin: 10px;
+ cursor: pointer;
+ border: 1px solid rgb(27, 27, 27);
+}
+
+.card-info {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ transition: transform .2s ease, opacity .2s ease;
+}
+
+/*Image*/
+.card-avatar {
+ --size: 60px;
+ background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
+ width: var(--size);
+ height: var(--size);
+ border-radius: 50%;
+ transition: transform .2s ease;
+ margin-bottom: 1rem;
+}
+
+
+/*Text*/
+.card-title {
+ color: #000000d3;
+ font-size: 1.5em;
+ font-weight: 600;
+ line-height: 2rem;
+ font-family: 'phudu';
+}
+
+.card-subtitle {
+ color: #ffffffb9;
+ font-size: 0.8em;
+ font-family: 'phudu';
+}
+
+/*Hover*/
+.card:hover {
+ box-shadow: 0 8px 50px #05000033;
+}
+
+.card:hover .card-info {
+ transform: translateY(-5%);
+}
+
+.card:hover .card-social {
+ transform: translateY(100%);
+ opacity: 1;
+}
+
+.card-social__item svg:hover {
+ fill: #232323;
+ transform: scale(1.1);
+}
+
+.card-avatar:hover {
+ transform: scale(1.1);
+}
+
+/*contenedor pokemon*/
+
+.contenedor-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+/*fondo pokemon*/
+
+.fondo-pokemon{
+    text-align: center;
+    width: 100%;
+}
+
+.fondo-pokemon img{
+    margin-top: 2px;
+    width: 500px;
+}

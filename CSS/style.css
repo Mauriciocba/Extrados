@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play&family=Oswald&family=Roboto+Mono:ital,wght@1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/*navegacion*/
+.navegacion{
+    list-style-type: none;
+    margin-bottom: 50px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1c1c27;
+  
+}
+
+.navegacion-li{
+    float: left;
+}
+  
+.navegacion-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Cairo Play', cursive;;
+    transition: .5s ease all;
+    
+}
+.navegacion-li a:hover {
+    transform: translateY(10px);
+}
+img{
+    width: 60px;   
+}
+img.izquierda {
+    float: right;
+}
+.div-tabla {
+    margin: 50px 0 50px 50px;
+}
+.div-tabla h2{
+    width: 350px;
+    margin:15px;
+    background-color: #3498DB;
+    border-radius: 10px 100px / 120px;
+    margin-left: 430px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    padding: 15px;
+}
+/*lista*/
+.contenedor-listas{
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 40px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    box-shadow: 1px 1px 10px rgb(2, 2, 2);
+}
+.contenedor-listas button{
+    margin-top: 50px;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #000000;
+}
+.caja2{
+    width: 200px;
+    font-family: 'Oswald', sans-serif;
+}
+.caja2 h4{
+    margin: 5px;
+}
+.caja2 li{
+    list-style-type: none;
+    color: rgb(44, 44, 44);
+}
+/*Formulario*/
+.contenedor{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    width: 300px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 40px;
+    box-shadow: 1px 1px 20px rgb(2, 2, 2);
+}
+textarea{
+    height: 6em;
+    width: 250px;
+    resize: none;
+}
+.contenedor h3{
+    cursor: pointer;   
+}
+.botonEnviar{
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(151, 212, 170);
+    cursor: pointer;
+}
+
+.botonEnviar:hover{
+    box-shadow: 5px 4px 3px 1px #000000, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1; 
+}
+.formulario{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+    font-size: 0.8em;
+    margin: 40px auto;
+    width: 300px;
+}
+
+input, textarea{
+    border: 0;
+    outline: none;
+    width: 280px;
+}
+
+.field{
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+
+.field:focus{
+    border-color: #18A383;
+}
+.boton-radio{
+    display: flex;
+    margin: 25px;
+}
+.boton-selected{
+    margin: 50px;
+}
+
+/*boton eliminar*/
